@@ -1,3 +1,4 @@
+#Laporan Praktikum
 # Praktikum 2 – Penerapan Integrasi Romberg untuk Meningkatkan Akurasi
 
 ## Anggota Kelompok
@@ -19,7 +20,7 @@ Tugas Anda adalah mengimplementasikan metode Romberg dalam bentuk program komput
 ---
 
 ## Kode Program
-
+```
 python
 import numpy as np
 
@@ -48,7 +49,7 @@ R = romberg(f, a, b, n)
 print("Tabel Romberg:")
 print(R)
 print(f"\nHasil integrasi sin(x) dari 0 sampai pi: {R[n-1, n-1]}")
-`
+```
 
 ---
 
@@ -64,27 +65,28 @@ print(f"\nHasil integrasi sin(x) dari 0 sampai pi: {R[n-1, n-1]}")
 
 ## Contoh Output Terminal
 
-
 Tabel Romberg:
-[[1.92367096e-16 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [1.57079633e+00 2.09439510e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [1.89611890e+00 2.00455975e+00 1.99857073e+00 0.00000000e+00 0.00000000e+00]
- [1.97423160e+00 2.00026917e+00 1.99998313e+00 2.00000000e+00 0.00000000e+00]
- [1.99357034e+00 2.00001659e+00 2.00000024e+00 2.00000000e+00 1.99999999e+00]]
+```````````````````````````````````````````````````````````````````````````````
+[[1.92367096e-16 ``` 0.00000000e+00 ``` 0.00000000e+00 ``` 0.00000000e+00 ``` 0.00000000e+00]
+ [1.57079633e+00 ``` 2.09439510e+00 ``` 0.00000000e+00 ``` 0.00000000e+00 ``` 0.00000000e+00]
+ [1.89611890e+00 ``` 2.00455975e+00 ``` 1.99857073e+00 ``` 0.00000000e+00 ``` 0.00000000e+00]
+ [1.97423160e+00 ``` 2.00026917e+00 ``` 1.99998313e+00 ``` 2.00000000e+00 ``` 0.00000000e+00]
+ [1.99357034e+00 ``` 2.00001659e+00 ``` 2.00000024e+00 ``` 2.00000000e+00 ``` 1.99999999e+00]]
 
 Hasil integrasi sin(x) dari 0 sampai pi: 1.9999999945872902
-
+```````````````````````````````````````````````````````````````````````````````
 
 ---
 
 ## Screenshot Output
+![WhatsApp Image 2025-06-15 at 19 42 34_72e5c1fb](https://github.com/user-attachments/assets/0a70f77b-bc3f-4e6f-a758-dfda9da90a35)
 
 ---
 
 ## Kesimpulan
 
-Metode Romberg secara efektif mengatasi kelemahan metode Trapezoidal yang membutuhkan banyak interval untuk mencapai akurasi tinggi.
-Dengan eksstrapolasi Richardson, hasil integrasi dapat dicapai dengan akurasi sangat tinggi hanya dalam beberapa iterasi.
-Dalam kasus integrasi fungsi sin(x) dari 0 hingga π, hasil mendekati angka eksak 2 tercapai dengan cepat.
+- Metode Romberg secara efektif mengatasi kelemahan metode Trapezoidal yang membutuhkan banyak interval untuk mencapai akurasi tinggi.
+- Dengan eksstrapolasi Richardson, hasil integrasi dapat dicapai dengan akurasi sangat tinggi hanya dalam beberapa iterasi.
+- Dalam kasus integrasi fungsi sin(x) dari 0 hingga π, hasil mendekati angka eksak 2 tercapai dengan cepat.
 
 ```
