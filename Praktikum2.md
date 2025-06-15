@@ -1,4 +1,4 @@
-#Laporan Praktikum
+# Laporan Praktikum
 # Praktikum 2 – Penerapan Integrasi Romberg untuk Meningkatkan Akurasi
 
 ## Anggota Kelompok
